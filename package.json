@@ -16,10 +16,10 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^3.2.1",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "gulp-html-partial": "^1.0.1"
   },
   "dependencies": {
-    "eslint": "^5.10.0",
-    "npm-install-all": "^1.1.21"
+    "natives": "^1.1.6"
   }
 }
