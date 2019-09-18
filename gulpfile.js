@@ -6,6 +6,7 @@ var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var htmlmin = require('gulp-htmlmin');
 var htmlpartial = require('gulp-html-partial');
+var server = require('gulp-server-livereload');
 
 //html partials and minify
 gulp.task('html', function () {
@@ -40,7 +41,7 @@ gulp.task('imagemin', function () {
 
 // watch
 gulp.task('watch', function () {
-	gulp.watch(['./src/*.html', './src/*/*.html'], ['html']);
+	gulp.watch(['./src/*.html', './src/*/*.html', './src/partials/*.html'], ['html']);
 	gulp.watch('./src/style/*.+(scss|sass)', ['style']);
 	gulp.watch('./src/js/*.js', ['uglify']);
 	gulp.watch('./src/img/*', ['imagemin']);
